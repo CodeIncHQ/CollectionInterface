@@ -22,12 +22,26 @@ declare(strict_types=1);
 namespace CodeInc\CollectionInterface;
 
 /**
- * Interface CollectionInterface
+ * Interface IteratorCollectionInterface
  *
  * @package CodeInc\CollectionInterface
  * @author Joan Fabrégat <joan@codeinc.fr>
  */
-interface CollectionInterface extends \Traversable
+interface IteratorCollectionInterface extends CollectionInterface, \Iterator
 {
+    /**
+     * @inheritdoc
+     */
+    public function rewind():void;
 
+    /**
+     * @inheritdoc
+     */
+    public function next():void;
+
+    /**
+     * @inheritdoc
+     * @return bool
+     */
+    public function valid():bool;
 }

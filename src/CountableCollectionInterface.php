@@ -22,12 +22,16 @@ declare(strict_types=1);
 namespace CodeInc\CollectionInterface;
 
 /**
- * Interface CollectionInterface
+ * Interface CountableCollectionInterface
  *
  * @package CodeInc\CollectionInterface
  * @author Joan Fabrégat <joan@codeinc.fr>
  */
-interface CollectionInterface extends \Traversable
+interface CountableCollectionInterface extends CollectionInterface, \Countable
 {
-
+    /**
+     * @inheritdoc
+     * @return int
+     */
+    public function count():int;
 }

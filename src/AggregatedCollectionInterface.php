@@ -22,12 +22,12 @@ declare(strict_types=1);
 namespace CodeInc\CollectionInterface;
 
 /**
- * Interface CollectionInterface
+ * Interface AggregatedCollectionInterface
  *
  * @package CodeInc\CollectionInterface
  * @author Joan Fabrégat <joan@codeinc.fr>
  */
-interface CollectionInterface extends \Traversable
+interface AggregatedCollectionInterface extends CollectionInterface, \IteratorAggregate
 {
 
 }
