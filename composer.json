@@ -1,0 +1,27 @@
+{
+  "name": "codeinc/collection-interface",
+  "version": "1.0.0",
+  "description": "A simple iterable PHP collection",
+  "homepage": "https://github.com/CodeIncHQ/CollectionInterface",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {"CodeInc\\CollectionInterface\\": "src/"}
+  },
+  "authors": [
+    {
+      "name": "Joan Fabrégat",
+      "email": "joan@codeinc.fr",
+      "homepage": "https://www.codeinc.fr",
+      "role": "developer"
+    }
+  ],
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    }
+  }
+}
