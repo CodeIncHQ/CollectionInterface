@@ -1,7 +1,7 @@
 {
   "name": "codeinc/collection-interface",
   "version": "1.0.0",
-  "description": "A simple iterable PHP collection",
+  "description": "A simple PHP interface for iterable collections",
   "homepage": "https://github.com/CodeIncHQ/CollectionInterface",
   "type": "library",
   "license": "MIT",

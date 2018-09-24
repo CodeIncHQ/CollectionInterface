@@ -1,30 +1,13 @@
-# PSR-15 middleware dispatcher
+# CollectionInterface
 
-`codeinc/middleware-dispatcher` is a [PSR-15](https://www.php-fig.org/psr/psr-15/) middleware dispatcher. The middleware dispatcher behaves as a PSR-15 [`RequestHandlerInterface`](https://www.php-fig.org/psr/psr-15/#21-psrhttpserverrequesthandlerinterface).
-
-## Usage
-
-```php
-<?php
-use CodeInc\MiddlewareDispatcher\MiddlewareDispatcher;
-
-$middlewareDispatcher = new MiddlewareDispatcher();
-
-// adding the middleware 
-$middlewareDispatcher->addMiddleware(new MyFirstMiddleware);
-$middlewareDispatcher->addMiddleware(new MySecondMiddleware);
-$middlewareDispatcher->addMiddleware(new MyThirdMiddleware);
-
-// handling the request
-$psr7Response = $middlewareDispatcher->handle($psr7ServerRequest);
-```
+The repository provides a simple PHP interface for iterable collections.
 
 ## Installation
 
-This library is available through [Packagist](https://packagist.org/packages/codeinc/middleware-dispatcher) and can be installed using [Composer](https://getcomposer.org/): 
+This library is available through [Packagist](https://packagist.org/packages/codeinc/collection-interface) and can be installed using [Composer](https://getcomposer.org/): 
 
 ```bash
-composer require codeinc/middleware-dispatcher
+composer require codeinc/collection-interface
 ```
 
 
