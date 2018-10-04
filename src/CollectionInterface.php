@@ -27,7 +27,21 @@ namespace CodeInc\CollectionInterface;
  * @package CodeInc\CollectionInterface
  * @author Joan Fabrégat <joan@codeinc.fr>
  */
-interface CollectionInterface extends \Traversable
+interface CollectionInterface extends \Iterator
 {
+    /**
+     * @inheritdoc
+     */
+    public function rewind():void;
 
+    /**
+     * @inheritdoc
+     */
+    public function next():void;
+
+    /**
+     * @inheritdoc
+     * @return bool
+     */
+    public function valid():bool;
 }

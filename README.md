@@ -1,6 +1,8 @@
 # CollectionInterface
 
-The repository provides a simple PHP interface for iterable collections.
+The repository provides two PHP interfaces for iterable collections:
+* [`CollectionInterface`](src/CollectionInterface.php) for simple collections
+* [`CountableCollectionInterface`](src/CountableCollectionInterface.php) for countable collections  
 
 ## Installation
 
